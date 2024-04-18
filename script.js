@@ -1,5 +1,5 @@
-const totalCards = 12;
-const availableCards = ['A', 'K', 'Q', 'J'];
+const totalCards = 20;
+const availableCards = ['shrimp','fish','donkey','penguin','bat','chicken','kangaroo','bear','deer','fox'];
 let cards = [];
 let selectedCards = [];
 let valuesUsed = [];
