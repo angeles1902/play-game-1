@@ -57,7 +57,7 @@ body {
  }
  
  .card .face {
-    background: olivedrab;
+    background: blue;
     transform: rotateY( 180deg );
     color: black;
     font-size: 1.5rem;

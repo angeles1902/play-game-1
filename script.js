@@ -1,5 +1,5 @@
-const totalCards = 20;
-const availableCards = ['shrimp','fish','donkey','penguin','bat','chicken','kangaroo','bear','deer','fox'];
+const totalCards = 6;
+const availableCards = [{id:1, name:'shrimp', url:'assets/camaron1.jpeg'},{id:2, name:'fish', url:'assets/pez1.jpeg'},{id:3, name:'donkey', url:'assets/burro1.jpeg'},{id:4, name:'penguin', url:'assets/Pinguino1.png}'},{id:5, name:'bat', url:'assets/bat1.jpg'},{id:6, name:'chicken', url:'assets/gallina1.png'},{id:7, name:'kangaroo', url:'assets/canguro1.jpg'},{id:8, name:'bear', url:'assets/oso1.jpeg'},{id:9, name:'deer', url:'assets/deer1.jpeg'},{id:10, name:'fox', url:'assets/fox1.jpeg'}];
 let cards = [];
 let selectedCards = [];
 let valuesUsed = [];
@@ -51,7 +51,7 @@ function randomValue() {
 function getFaceValue(value) {
    let rtn = value;
    if (value < availableCards.length) {
-      rtn = availableCards[value];
+      rtn = availableCards[value].name;
    }
    return rtn;
 }
