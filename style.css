@@ -39,9 +39,19 @@ body {
     transition: transform 0.5s;
     transform-style: preserve-3d;
  }
- 
+
  .card.active {
     transform: rotateY(180deg);
+ }
+
+ .card .face {
+   border: 3px solid olivedrab;
+   overflow: hidden;
+ }
+
+ .card .face .faceImage {
+   width: 100%;
+   height: 100%;
  }
  
  .card div {

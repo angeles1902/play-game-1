@@ -6,7 +6,7 @@ let valuesUsed = [];
 let currentMove = 0;
 let currentAttempts = 0;
 
-let cardTemplate = '<div class="card"><div class="back"></div><div class="face"></div></div>';
+let cardTemplate = '<div class="card"><div class="back"></div><div class="face"><img class="faceImage" src="" ></div></div>';
 
 function activate(e) {
    if (currentMove < 2) {
@@ -51,7 +51,7 @@ function randomValue() {
 function getFaceValue(value) {
    let rtn = value;
    if (value < availableCards.length) {
-      rtn = availableCards[value].name;
+      rtn = availableCards[value].url;
    }
    return rtn;
 }
@@ -62,6 +62,10 @@ for (let i=0; i < totalCards; i++) {
    cards.push(div);
    document.querySelector('#game').append(cards[i]);
    randomValue();
-   cards[i].querySelectorAll('.face')[0].innerHTML = getFaceValue(valuesUsed[i]);
+   cards[i].querySelectorAll('.faceImage')[0].setAttribute('src', getFaceValue(valuesUsed[i]))
    cards[i].querySelectorAll('.card')[0].addEventListener('click', activate);
 }
+
+
+
+objetfitcss
