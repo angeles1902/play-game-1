@@ -1,6 +1,6 @@
 const totalCards = 20;
 const availableCards = [{id:1, name:'shrimp', url:'assets/1.png'},{id:2, name:'fish', url:'assets/9.png'},{id:3, name:'donkey', url:'assets/3.png'},{id:4, name:'penguin', url:'assets/10.png'},{id:5, name:'bat', url:'assets/2.png'},{id:6, name:'chicken', url:'assets/7.png'},{id:7, name:'kangaroo', url:'assets/4.png'},{id:8, name:'bear', url:'assets/8.png'},{id:9, name:'deer', url:'assets/5.png'},{id:10, name:'fox', url:'assets/6.png'}];
-const fruitCards= [{id:1, name:'apple', url:'assets/apple.png'},[{id:2, name:'avocado', url:'assets/avocado.png'}],[{id:3, name:'backberry', url:'assets/blackberry.png'}],[{id:4, name:'banana', url:'assets/banana.png'}],[{id:5, name:'blueberry', url:'assets/blueberry.png'}],[{id:6, name:'cherry', url:'assets/cherry.png'}],[{id:7, name:'grapes', url:'assets/grapes.png'}],[{id:8, name:'peach', url:'assets/peach.png'}],[{id:9, name:'tangerine', url:'assets/tangerine.png'}],[{id:10, name:'watermelon', url:'assets/watermelonS.png'}]]
+const fruitCards= [{id:1, name:'apple', url:'assets/apple.png'},{id:2, name:'avocado', url:'assets/avocado.png'},{id:3, name:'backberry', url:'assets/blackberry.png'},{id:4, name:'banana', url:'assets/banana.png'},{id:5, name:'blueberry', url:'assets/blueberry.png'},{id:6, name:'cherry', url:'assets/cherry.png'},{id:7, name:'grapes', url:'assets/grapes.png'},{id:8, name:'peach', url:'assets/peach.png'},{id:9, name:'tangerine', url:'assets/tangerine.png'},{id:10, name:'watermelon', url:'assets/watermelonS.png'}]
 const ProfessionsCards= [{id:1, name:'architect', url:'assets/architect.png'},{id:2, name:'astronaut', url:'assets/astronaut.png'},{id:3, name:'dentist', url:'assets/dentist.png'},{id:4, name:'doctor', url:'assets/doctor.png'},{id:5, name:'firefightert', url:'assets/firefighter.png'},{id:6, name:'lawyer', url:'assets/lawyer.png'},{id:7, name:'police', url:'assets/police.png'},{id:8, name:'soccer player', url:'assets/soccer player.png'},{id:9, name:'teacher', url:'assets/teacher.png'},{id:10, name:'vet', url:'assets/vet.png'}]
 let cards = [];
 let selectedCards = [];
@@ -52,8 +52,8 @@ function randomValue() {
 
 function getFaceValue(value) {
    let rtn = value;
-   if (value < availableCards.length) {
-      rtn = availableCards[value].url;
+   if (value < fruitCards.length) {
+      rtn = fruitCards[value].url;
    }
    return rtn;
 }
